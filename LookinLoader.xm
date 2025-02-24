@@ -12,7 +12,7 @@
 %ctor {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     //NSDictionary *prefs = [[NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.x.lookinloader.plist"] retain];
-    NSString *libraryPath = @"/var/jb/Library/LookinLoader/LookinServer";
+    NSString *libraryPath = @"/var/jb/Library/Application Support/LookinLoader/LookinServer";
 
     @try {
         NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
