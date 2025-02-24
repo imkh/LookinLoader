@@ -11,7 +11,6 @@
 
 %ctor {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    //NSDictionary *prefs = [[NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.x.lookinloader.plist"] retain];
     NSString *libraryPath = @"/var/jb/Library/Application Support/LookinLoader/LookinServer";
 
     @try {
@@ -29,7 +28,6 @@
             return;
         }
 
-        //if([[prefs objectForKey:[NSString stringWithFormat:@"LookinEnabled-%@", bundleIdentifier]] boolValue]) {
         if (![[NSFileManager defaultManager] fileExistsAtPath:libraryPath]) {
             NSLog(@"[LookinLoader] Error: LookinServer not found at path: %@", libraryPath);
             [pool drain];
@@ -45,7 +43,6 @@
         }
 
         NSLog(@"[LookinLoader] Successfully loaded %@ for %@", libraryPath, bundleIdentifier);
-        //}
     } @catch (NSException *exception) {
         NSLog(@"[LookinLoader] Exception occurred: %@", exception);
     }
