@@ -1,9 +1,9 @@
-Package: com.x.lookinloader
+Package: io.imkh.lookinloader
 Name: LookinLoader
 Depends: mobilesubstrate
 Version: 1.0
 Architecture: iphoneos-arm
-Description: Lookin Loader, unofficial
+Description: A Lookin Loader tweak
 Maintainer: developer
 Author: developer
 Section: Tweaks
